@@ -49,8 +49,14 @@ def setup_tandas(graph):
       continue
     for item2 in graph.items():
       if (item[0] != item2[0] and item2[0] not in item[1] and item2[0] not in skip):
-        lavar.append(item2[0])
-        skip.append(item2[0])
+        any_present = False
+        for value in item2[1]:
+          if (value in lavar):
+            any_present = True
+            break
+        if (not any_present):
+          lavar.append(item2[0])
+          skip.append(item2[0])
     skip.append(item[0])
     tandas.append(lavar)
   return tandas
