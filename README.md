@@ -1,5 +1,16 @@
 # modelosuno_lavadera_100102
 
+* Entrega 2
+- Impresión del problema.
+ * Cambios con respecto la entrega anterior es que se aumentaron la cantidad de restricciones, el problema es el mismo
+- Ideas de como lo van a intentar resolver
+ * mantuve la resolucion anterior, pero ahora voy a llevar al limite de fuerza bruta.
+- Comentarios sobre los cambios que hagan en el código a medida que intentan mejorar el resultado.
+ * agregue randomizaciones y multithreading, tomando la mejor opcion.
+ * estoy usando 100 threads y 1000 ciclos en cada thread.
+- Comentarios finales de la entrega
+
+* Entrega 1
 - Impresión del problema:
   * me entere a ultimo momento del tp, y de la primera entrega lo realice en una hora durante la noche, y lo pense como un ejercicio de logica, y el resultado no fue optimo claramente
 - Ideas de como lo van a intentar resolver:
