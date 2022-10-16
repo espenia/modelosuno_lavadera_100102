@@ -42,11 +42,11 @@ Es un ejercicio de coloreo, lo podemos pensar como un grafo G(V (vertices),E (ar
 representa que estas aristas no pueden lavarse juntas.
 Entonces planteo el modelo clasico de Coloreo
 
- ```math
- $ x_ij, w_j \in {0, 1} $ Si dos prendas son adyacentes(destiñen) no pueden estar en la misma tanda  $x_ij$ = vertice i esta en tanda j 
- $ x_ij + x_kj \le w_j si [i, k] \in E para todo j = 1,...,N $  Si algun prenda esta en la tanda j se fuerza wj a valer 1
- $ \sum_{j=1}^N x_ij = 1 para todo i \in V $  Cada prenda puede estar en una sola tanda
- $ Min z = \sum_{j=1}^N w_j $ Minimiza la cantida de colores
-```
+![plot](./equations.PNG)
+
+* eq1: Si dos prendas son adyacentes(destiñen) no pueden estar en la misma tanda  $x_ij$ = vertice i esta en tanda j
+* eq2: Si algun prenda esta en la tanda j se fuerza wj a valer 1
+* eq3: Cada prenda puede estar en una sola tanda
+* eq4: Minimiza la cantida de colores
 
 
