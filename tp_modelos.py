@@ -41,7 +41,7 @@ def multi_threading(graph):
     global tandas_finales
     tandas_finales = []
     threads = []
-    for i in range(0, 500):
+    for i in range(0, 100):
         t = threading.Thread(target=setup_tandas, args=[graph])
         t.start()
         threads.append(t)
@@ -91,10 +91,10 @@ def setup_tandas(graph):
 
 def program():
     graph = {}
-    graph = cargar_matriz("tercer_problema.txt", graph)
+    graph = cargar_matriz("cuarto_problema.txt", graph)
     tandas = multi_threading(graph)
     print(tandas)
-    f = open("entrega_3.txt", "w")
+    f = open("entrega_4.txt", "w")
     for i in range(0, len(tandas)):
         for value in tandas[i]:
             f.write(str(value) + " " + str(i + 1) + "\n")
